@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh DOM</title>
+</head>
+
+<body>
+    
+  <h1 id="judul">Halo, Dunia!</h1>
+  <p id="paragraf">Ini adalah paragraf awal.</p>
+  <button id="tombol">Ubah Paragraf</button>
+
+  <script>
+    // Mengambil elemen dari DOM
+    const paragraf = document.getElementById('paragraf');
+    const tombol = document.getElementById('tombol');
+
+   
+    // Menambahkan event listener ke tombol
+    tombol.addEventListener('click', function() {
+      // Mengubah teks paragraf
+      
+      paragraf.textContent = "Paragraf telah diubah!";
+      // Mengubah warna paragraf
+     
+      paragraf.style.color = "blue";
+    });
+
+  </script>
+</body>
+</html>
